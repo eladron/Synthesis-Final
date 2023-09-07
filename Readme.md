@@ -22,7 +22,8 @@ python3 ./src/Synthesizer.py
 * -ife, --input_file_examples: The path to an Excel file containing the input examples.
 * -ofe, --onput_file_examples: The path to an Excel file containing the input examples.
 * -lf, --linv_file: The path to the file containing a JSON file containing the loop invariant. The path is calculated from the linv folder. 
-* -lu, --loop_unrolling:  If the value isn't 0, then loop unrolling will be used and will unroll the loop *value* number of times.
+* -lu, --loop_unrolling: If the value isn't 0, then loop unrolling will be used and will unroll the loop *value* number of times.
+* -ni, --no_interactive: Indicates that the synthesizer should not ask for input
 
 ### Input/Output examples files format
 

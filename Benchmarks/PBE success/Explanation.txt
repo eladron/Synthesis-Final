@@ -1,0 +1,12 @@
+This example shows how the synthesizer will find the number to fill in the hole.
+The program:
+```
+b := a ; while a < (b + 3996) do ( a := a + ??; b := b + 1)```
+The output:
+'''
+The synthesizer will find the number 1000 to fill in the hole.
+'''
+The command line:
+```
+python3 .\src\Synthesizer.py -p='program.txt' -pbe -if='input.xlsx' -of='output.xlsx' -lu=5 -ub=1000
+

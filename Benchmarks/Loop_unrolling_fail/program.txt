@@ -1,0 +1,1 @@
+b := a ; while a < (b + 3996) do ( c := a ; a := a + ?? ; assert (a < (c + 1001)) ; b := b + 1)

@@ -1,0 +1,12 @@
+This example shows the ability to synthesize a number where the program has multiple asserts.
+The program:
+```
+a := 9 ; a := a + ?? ; assert a > 9 ; a := 11 ; a := a - ?? ; assert a < 11 
+```
+The output:
+'''
+The synthesizer will find that 1 will satisfy the assert.
+'''
+The command line:
+```
+python3 .\src\Synthesizer.py -p='program.txt'

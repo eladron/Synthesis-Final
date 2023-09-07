@@ -1,0 +1,17 @@
+This example shows the limitaion to synthesize successfully when the linv isn't informative.
+The program:
+```
+a := 10 ; b := 10 ; while a < 20 do ( a := a + ??; b := b + 1; assert a > b)
+```
+The loop invariant:
+'''
+a < 20
+'''
+The output:
+'''
+The synthesizer will not find a nubmer that satisfy the assert no matter the bounds.
+'''
+The command line:
+```
+python3 .\src\Synthesizer.py -p='program.txt' -lf='fail_assert_in_while.json'
+

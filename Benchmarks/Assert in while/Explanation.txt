@@ -1,0 +1,17 @@
+This example shows the ability to synthesize a number where the program has assert inside a while loop.
+The program:
+```
+a := 10 ; b := 10 ; while a < 20 do ( a := a + ??; b := b + 1; assert a > b)
+```
+The loop invariant:
+'''
+a >= b
+'''
+The output:
+'''
+The synthesizer will find that 2 will satisfy the assert.
+'''
+The command line:
+```
+python3 .\src\Synthesizer.py -p='program.txt' -lf='assert_in_while.json'
+'''

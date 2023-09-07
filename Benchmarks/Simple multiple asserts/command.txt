@@ -1,0 +1,1 @@
+python ./src/Synthesizer.py -ni -p=program.txt 

@@ -1,0 +1,1 @@
+python ./src/Synthesizer.py -ni -p=program.txt  -pbe -ife=input.xlsx -ofe=output.xlsx -lu=2 -ub=1000

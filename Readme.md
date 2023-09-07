@@ -27,6 +27,7 @@ python3 ./src/Synthesizer.py
 ### Input/Output examples files format
 
 The input/output examples files should be in Excel format and structured as follows:
+![image](https://github.com/eladron/Synthesis-Final/assets/63602693/4171039d-8b66-47a8-a1c7-2732b1c9c44c)
 
 Each line in both files should represent an input/output example, and there should be the same number of examples (lines) in both files.
 If a cell is empty, it will not affect this specific example.
@@ -37,14 +38,14 @@ If a cell is empty, it will not affect this specific example.
 The linv files that should be located under the linv folder are in JSON format.
 An example of a linv file:
 
-
+![image](https://github.com/eladron/Synthesis-Final/assets/63602693/83463c5d-3f7c-49c7-a0b1-c97b08256dc3)
 
 The tag field has 3 available values: 'And', 'Or', and 'expr'.
 If a tag is equal to 'expr' then it will have a brother named 'expr' that will contain a list with 3 places: [EXPR, RELOP, EXPR] where RELOP is one of ['==', '!=', '>', '>=', '<', '<='] and expr is an expression written in python syntax.
 
 ### Linv file creation
 
-Because the linv files can be complicated for some people, we added a file creator script that enables you to create a linv file interactively.
+Because the linv files can be complicated, we added a file creator script that enables you to create a linv file interactively.
 
 #### Usage:
 

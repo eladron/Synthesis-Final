@@ -67,11 +67,18 @@ Adding more benchmarks can be done by creating a new folder under the [Benchmark
 
 ### Running Benchmarks
 To run all of the benchmarks, use the supplied script: run.py.
-```python
+```bash
 python3 run.py 
 ```
 The script will output to the screen the results for the benchmarks including the synthesized programs and how long it took to synthesize them.
-
+In order to redirect the output, use the flag -o with the name of the output file. For example:
+```bash
+python3 run.py -o='output.txt'
+```
+You can also run specific benchmarks by adding their names to the command line.
+```bash
+python3 run.py 'Assert in while' 'If else'
+```
 **Note that running all of the benchmarks might take a few minutes.**
 
 ## Cool Implementation Details

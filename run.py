@@ -73,7 +73,8 @@ if __name__ == '__main__':
     for arg in argv[1:]:
         if '-o='==arg[:3]:
             output_file = arg[3:]
-            os.remove(output_file)
+            if os.path.exists(output_file):
+                os.remove(output_file)
         else:
             benchmarks.append(arg)
     if len(benchmarks) == 0:

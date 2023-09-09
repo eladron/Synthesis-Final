@@ -53,7 +53,7 @@ def run_benchmark(benchmark_folder, output_file):
         with open(path + 'command.txt', 'r') as f:
             command = f.read()
     else:
-        command = "python ./src/Synthesizer.py -ni -p=program.txt " + (linv_file != '') * ("-lf=" + linv_file)
+        command = "python3 ./src/Synthesizer.py -ni -p=program.txt " + (linv_file != '') * ("-lf=" + linv_file)
         command = command if not examples else command + " -pbe -ife=input.xlsx -ofe=output.xlsx"
         command = add_flags(command, path)
         with open(path + 'command.txt', 'w') as f:
